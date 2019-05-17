@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Practice_BS</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- For use of Social Media icons -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <link href="reset.css" rel="reset.css">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/nameLogo copy.jpg"></a>
+
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+                <!-- Adds the 3-bar hamburger icon in-line inside of the button created -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Adds a class to the collapsable navbar, add id for the data target, and adds list in the dropdown menu -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <!-- Uding (ml-auto) pushes flex items (navigation) to the right of the screen as opposed to being in the center // See Auto Margins -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Connect</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--- Image Slider -->
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/background.png" alt="background">
+                <div class="carousel-caption">
+                    <h1 class="display-2">Bootstrap</h1>
+                    <h3>Complete Website Layout</h3>
+                    <button type=button class="btn btn-outline-light btn-lg">VIEW DEMO</button>
+                    <button type=button class="btn btn-primary btn-lg">GET STARTED</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/background2.png" alt="background2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/background3.png" alt="background3">
+            </div>
+        </div>
+    </div>
+
+    <!--- Jumbotron -->
+    <div class="conatiner-fluid">
+        <div class="row jumbotron">
+            <!-- Indicate when this Jumbotron content collapses for each viewport sizes.
+             E.g. At XL screen (>= 1200px wide), the paragrah will take 10 columns as indicated by col-xl-10 -->
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+
+                <!-- BS: .lead makes a paragraph stand out with clean styling -->
+                <p class="lead">A web hosting service allows individuals and organizations to make their website
+                    accessible via the World Wide Web.</p>
+            </div>
+
+            <!-- E.g. At XL screen, the button will take 2 columns as indicated by col-xl-2 -->
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--- Welcome Section -->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Built with Ease.</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus nemo aliquid, sed
+                    dolorum quidem officiis dolor quos ad molestias vel aliquam harum inventore at fugiat quo dolorem
+                    libero, quod iure.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- Three Column Section -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-code"></i>
+                <h3>HTML5</h3>
+                <p>Built with the lates version of HTML, HTML5.</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bold"></i>
+                <h3>BOOTSTRAP</h3>
+                <p>Built with the lates version of Bootstrap, Bootstrap4.</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4">
+                <i class="fab fa-css3"></i>
+                <h3>CSS3</h3>
+                <p>Built with the lates version of CSS, CSS3.</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>If you build it...</h2>
+                <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.
+                </p>
+                <p>Resize the browser window to see the effect. Responsive web design has become more important as the
+                    amount of mobile traffic now accounts for more than half of total internet traffic.</p>
+                <p>It can also display the web page differently depending on the screen size or viewing device.</p>
+                <br>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/desk.png" alt="Desk" class="img-fluid">
+
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+
+    <!--- Fixed background -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+            </div>
+        </div>
+    </figure>
+
+    <!--- Emoji Section -->
+    <button class="fun" data-toggle="collapse" data-target="#emoji">Click Here for Fun!</button>
+    <div id="emoji" class="collapse">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="images/gif/panda.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="images/gif/poo.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="images/gif/unicorn.gif">
+                </div>
+                <div class="col-sm-6 col-md-3">
+                    <img class="gif" src="images/gif/chicken.gif">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Meet the team -->
+    <div class="conatiner-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Meet the Team</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--- Cards -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/team1.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Blaze</h4>
+                        <p class="card-text">Blaze is an Internet entrepreneur with almost 20 years of experience.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/team2.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Starla</h4>
+                        <p class="card-text">Starla is a designer with almost 10 years of digital design experience.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="images/team3.png">
+                    <div class="card-body">
+                        <h4 class="card-title">Darington</h4>
+                        <p class="card-text">Darlington is a developer with over 10 years of ad web development
+                            experience.</p>
+                        <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>Our Philosophy</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel tenetur sint perspiciatis delectus
+                    magnam odio, officia quo, fugit quibusdam minus nostrum consequuntur eaque, inventore necessitatibus
+                    ea! Deserunt corrupti asperiores alias.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis harum nihil corrupti vitae eveniet,
+                    recusandae amet! Quos numquam doloribus, ex, unde voluptatum porro at magnam enim perspiciatis
+                    voluptates accusantium! Necessitatibus?</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="images/bootstrap2.png" alt="Bootstrap2" class="img-fluid">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--- Connect: Social Media links-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Connect</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <hr class="light">
+                    <img src="images/nameLogo copy.jpg" alt="nameLogo" width="30%" height="20%">
+                    <hr class="light">
+                    <p>555-555-5555</p>
+                    <p>email@email.com</p>
+                    <p>123 Street Name, Chicago, IL 60606</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Business Hours</h5>
+                    <hr class="light">
+                    <p>Monday - Friday: 8am - 5pm CT</p>
+                    <p>Saturday: 10am - 2pm CT</p>
+                    <p>Sunday: By appointment only</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Service Areas</h5>
+                    <hr class="light">
+                    <p>City, State, 00000</p>
+                    <p>City, State, 00000</p>
+                    <p>City, State, 00000</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copy; Maricchi</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+<!--- Check out my course on Udemy! -->
+<!-- <div class="udemy-course" style="position: fixed; bottom: 0; right: 0; margin-bottom: -5px; z-index: 100;"> -->
+<!-- <a href="http://bit.ly/advanced-bootstrap-course" target="_blank" style="z-index: 999!important; cursor: pointer!important;"><img src="https://www.w3newbie.com/wp-content/uploads/nuno-udemy-banner.png" style="max-width: 100%; min-width: 100%;"></a> -->
+<!-- </div> -->
